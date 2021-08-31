@@ -15,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/miprogramacion.js"></script>
     <title>Lumitec💡</title>
   </head> <!-- Cierra head -->
   <body>
@@ -28,75 +30,79 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link text-warning" href="sale.html">Nuestros Productos</a>
+            <a id="productos" class="nav-link text-warning" href="#">Nuestros Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-warning" href="faqs.html">Faqs</a>
+            <a id="faqs" class="nav-link text-warning" href="#">Faqs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-warning" href="tyc.html">Términos y condiciones</a>
+            <a id="tyc" class="nav-link text-warning" href="#">Términos y condiciones</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="content d-flex">
-      <div class="SobreNosotros col-md-6 mt-5 p-1">
-          <h1>
-              Sobre nosotros: 
-          </h1>
-          <h4 class="text-dark p-3 text-justify">Lumitec es una empresa familiar, nacida en el año 2017 en Adelía María, un pueblo ubicado al sur de la provincia de Córdoba, Argentina. Ofrecemos servicio técnico y venta presencial en <a href="https://www.google.com/maps/place/LUMITEC+Electricidad+%26+iluminaci%C3%B3n/@-33.6358874,-64.021467,15z/data=!4m5!3m4!1s0x0:0xbeb4294bebd212b1!8m2!3d-33.6358874!4d-64.021467"><b><u>Nuestra sucursal</b></u></a> y también venta online a través de nuestro sitio. </h4>
-        <div class="btns p-1">
-            <a href="sale.html"><button type="button" class="btn btn-warning">Ver Nuestro Catálogo</button></a>
+    <div id="totalidad">
+      <div class="content d-flex">
+        <div class="SobreNosotros col-md-6 mt-5 p-1">
+            <h1>
+                Sobre nosotros: 
+            </h1>
+            <h4 class="text-dark p-3 text-justify">Lumitec es una empresa familiar, nacida en el año 2017 en Adelía María, un pueblo ubicado al sur de la provincia de Córdoba, Argentina. Ofrecemos servicio técnico y venta presencial en <a href="https://www.google.com/maps/place/LUMITEC+Electricidad+%26+iluminaci%C3%B3n/@-33.6358874,-64.021467,15z/data=!4m5!3m4!1s0x0:0xbeb4294bebd212b1!8m2!3d-33.6358874!4d-64.021467"><b><u>Nuestra sucursal</b></u></a> y también venta online a través de nuestro sitio. </h4>
+          <div class="btns p-1">
+              <a href="sale.html"><button type="button" class="btn btn-warning">Ver Nuestro Catálogo</button></a>
+          </div>
+        </div>
+        <div class="centralimage col-md-6 mt-5 p-5  d-none d-sm-block d-none d-sm-block"> 
+            <img class="w-100 h-60"  src="images/Logolumitec.png" alt="">
         </div>
       </div>
-      <div class="centralimage col-md-6 mt-5 p-5  d-none d-sm-block d-none d-sm-block"> 
-          <img class="w-100 h-60"  src="images/Logolumitec.png" alt="">
+    
+    
+      <!-- Inicio productos -->
+      <div class="row justify-content-center">
+        <div class="col-sm-2"></div>
+        <div class="ubicacion col-sm-4 justify-content-center">
+            <div class="column">
+                <div class="col-sm-6">
+                        <img src="images/amaria.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <h3>Sucursal Adelia María</h3>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <a href="https://www.google.com/maps/place/LUMITEC+Electricidad+%26+iluminaci%C3%B3n/@-33.6358874,-64.021467,15z/data=!4m5!3m4!1s0x0:0xbeb4294bebd212b1!8m2!3d-33.6358874!4d-64.021467"><button type="button" class="btn btn-warning" >Ver en el mapa</button></a>
+            </div>
+        </div>
+        <div class="ubicacion col-sm-4 justify-content-center">
+            <div class="column">
+                <div class="col-sm-6">
+                        <img src="images/rcuarto.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-6">
+                  <h3>Sucursal Río Cuarto</h3>
+              </div>
+            </div>
+            <br>
+            <div class="row ">
+                <a href="error.html"><button type="button" class="btn btn-warning">Ver en el mapa</button></a>
+            </div>
+        </div>
+    </div>
+    
+      <!-- Inicia menciones -->
+      <div class="carrousel col-md-12 text-center">
+        <h1 class="text.align-center p-5">Marcas</h1>
+        <h4>Trabajamos con las mejores marcas del mercado para ofrecerte productos de calidad a un precio áltamente accesible. </h4>
+        <div class="images d-flex ml">
+          <img class="w-25 h-15" src="images/mlogo1.png" alt="">
+          <img class="w-25 h-15" src="images/mlogo2.png" alt="">
+          <img class="w-25 h-15" src="images/mlogo3.png" alt="">
+          <img class="w-25 h-15" src="images/mlogo4.png" alt="">
       </div>
     </div>
-
-   
-    <!-- Inicio productos -->
-    <div class="row justify-content-center">
-      <div class="col-sm-2"></div>
-      <div class="ubicacion col-sm-4 justify-content-center">
-          <div class="column">
-              <div class="col-sm-6">
-                      <img src="images/amaria.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-sm-6">
-                  <h3>Sucursal Adelia María</h3>
-              </div>
-          </div>
-          <br>
-          <div class="row">
-              <a href="https://www.google.com/maps/place/LUMITEC+Electricidad+%26+iluminaci%C3%B3n/@-33.6358874,-64.021467,15z/data=!4m5!3m4!1s0x0:0xbeb4294bebd212b1!8m2!3d-33.6358874!4d-64.021467"><button type="button" class="btn btn-warning" >Ver en el mapa</button></a>
-          </div>
-      </div>
-      <div class="ubicacion col-sm-4 justify-content-center">
-          <div class="column">
-              <div class="col-sm-6">
-                      <img src="images/rcuarto.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-sm-6">
-                <h3>Sucursal Río Cuarto</h3>
-            </div>
-          </div>
-          <br>
-          <div class="row ">
-              <a href="error.html"><button type="button" class="btn btn-warning">Ver en el mapa</button></a>
-          </div>
-      </div>
   </div>
-    <!-- Inicia menciones -->
-    <div class="carrousel col-md-12 text-center">
-      <h1 class="text.align-center p-5">Marcas</h1>
-      <h4>Trabajamos con las mejores marcas del mercado para ofrecerte productos de calidad a un precio áltamente accesible. </h4>
-      <div class="images d-flex ml">
-        <img class="w-25 h-15" src="images/mlogo1.png" alt="">
-        <img class="w-25 h-15" src="images/mlogo2.png" alt="">
-        <img class="w-25 h-15" src="images/mlogo3.png" alt="">
-        <img class="w-25 h-15" src="images/mlogo4.png" alt="">
-      </div>
     <!-- Inicio de footer -->
     <footer>
       <div class="option">lumitec_am@hotmail.com</div>
@@ -106,4 +112,5 @@
     <!-- Script -->
     <script src="scripts/script.js"></script>
   </body> <!-- Cierra body -->
+
 </html> <!-- Cierra html -->
